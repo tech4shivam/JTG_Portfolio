@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Sharma - Front-end Developer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="logo_JTG.png">
+                </div>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="nav-toggle" class="hamburger">&#9776;</button>    
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>I'm Shivam Sharma</h1>
+                    <h2>Front-end Developer</h2>
+                    <p>I build things for the web. I specialize in creating websites, web applications, browser extensions, and interactive experiences. You can find links to my work below.</p>
+                    <button class="btn primary-btn">Hire ME &rarr;</button>
+                </div>
+                <div class="hero-image">
+                    <img src="Hero-Image.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="section-desc">Check out my latest work. I've created websites for clients across various industries. Feel free to explore them and let me know what you think.</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 1">
+                    <div class="project-info">
+                        <h3>How To Create Fast Website</h3>
+                        <div class="tags">
+                            <span>TailwindCSS</span>
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 2">
+                    <div class="project-info">
+                        <h3>How To Make Responsive Design</h3>
+                        <div class="tags">
+                            <span>TailwindCSS</span>
+                            <span>ReactJS</span>
+                            <span>NextJS</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 3">
+                    <div class="project-info">
+                        <h3>How To Create Good UX Design</h3>
+                        <div class="tags">
+                            <span>TailwindCSS</span>
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Build Mobile App Using React Native</h3>
+                        <div class="tags">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 5">
+                    <div class="project-info">
+                        <h3>E-Commerce Dashboard Analytics</h3>
+                        <div class="tags">
+                            <span>ReactJS</span>
+                            <span>ChartJS</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Project 6">
+                    <div class="project-info">
+                        <h3>Social Media Dashboard</h3>
+                        <div class="tags">
+                            <span>ReactJS</span>
+                            <span>Firebase</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Languages Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills-header">
+                <h2>Skills & Languages</h2>
+                <button id="add-skill-btn" class="btn primary-btn">Add Skill</button>
+            </div>
+
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>HTML</h3>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>CSS</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>JavaScript</h3>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>React</h3>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>Node.js</h3>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>TypeScript</h3>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>Vue.js</h3>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-info">
+                            <h3>Figma</h3>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <div class="language-item">
+                        <div class="language-info">
+                            <h4>English</h4>
+                            <span>Fluent</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-info">
+                            <h4>Hindi</h4>
+                            <span>Fluent</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="language-item">
+                        <div class="language-info">
+                            <h4>German</h4>
+                            <span>Basic</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+        <div class="container">
+            <h2>Recommendations</h2>
+            <p class="section-desc">Here's what my clients and colleagues have said about working with me. I strive to deliver exceptional results for all my projects.</p>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn left" id="prevBtn">&#10094;</button>
+                <div class="carousel">
+                    <div class="testimonial-card active">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Working with Shivam was an absolute pleasure. He understood our requirements perfectly and delivered a website that exceeded our expectations. His attention to detail and technical expertise are truly impressive."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Steve Quincy">
+                            <div>
+                                <h4>Steve Quincy</h4>
+                                <span>CEO at TechStart</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Shivam is a talented developer who consistently delivers high-quality work. His communication skills are excellent, and he's always willing to go the extra mile to ensure client satisfaction. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Beverly Wood">
+                            <div>
+                                <h4>Beverly Wood</h4>
+                                <span>Marketing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"We hired Shivam to redesign our company website, and the results were fantastic. He has a great eye for design and knows how to create user-friendly interfaces. Our conversion rates have increased significantly since the redesign."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="James Duncan">
+                            <div>
+                                <h4>James Duncan</h4>
+                                <span>Product Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Shivam is the best developer I've worked with. His code is clean, well-documented, and follows best practices. He's also great at explaining technical concepts to non-technical stakeholders. A true professional!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="Tyler Washburn">
+                            <div>
+                                <h4>Tyler Washburn</h4>
+                                <span>CTO at DevHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn right" id="nextBtn">&#10095;</button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Leave ME Your Info</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="fullname">Your Full Name (Required)</label>
+                            <input type="text" id="fullname" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email (Required)</label>
+                            <input type="email" id="email" placeholder="abcd@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Project Inquiry">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3>Location</h3>
+                            <p>S-201/B, School block, Shakarpur, Delhi-110092</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>+91 9319401001</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>shiv.sharma312004@gmail.com</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>www.linkedin.com/in/shivam-sharma-b2150b1a0</p>
+                        </div>
+                    </div>
+                    <div class="schedule">
+                        <h3>Support Schedule</h3>
+                        <div class="schedule-item">
+                            <span>Monday - Friday</span>
+                            <span>9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>Saturday</span>
+                            <span>10:00 AM - 2:00 PM</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-image">
+                <img src="Image_footer.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="logo_JTG.png">
+                    </div>
+                    <p>Front-end developer specializing in creating beautiful and functional websites and web applications.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#recommendations">Recommendations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-portfolio">
+                    <h3>Portfolio</h3>
+                    <ul>
+                        <li><a href="#">Frontend Development</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                        <li><a href="#">UX/UI Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Website Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-connect">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-linkedin-in"></i> <a href="#">LinkedIn</a></li>
+                        <li><i class="fa-brands fa-github"></i> <a href="#">GitHub</a></li>
+                        <li><i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Shivam Sharma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add Skill Modal -->
+    <div id="skill-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Add New Skill</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="add-skill-form">
+                    <div class="form-group">
+                        <label for="skill-name">Skill Name</label>
+                        <input type="text" id="skill-name" placeholder="e.g. JavaScript, Photoshop, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="proficiency">Proficiency (%): <span id="proficiency-value">75</span>%</label>
+                        <input type="range" id="proficiency" min="0" max="100" value="75">
+                        <div class="slider-labels">
+                            <span>Beginner</span>
+                            <span>Intermediate</span>
+                            <span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="" selected disabled>Select Category</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="design">Design</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="button" class="btn secondary-btn" id="cancel-btn">Cancel</button>
+                        <button type="submit" class="btn primary-btn">Add Skill</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
