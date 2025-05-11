@@ -48,32 +48,30 @@ document.addEventListener('DOMContentLoaded', function () {
         closeModal();
     });
 
-    // Testimonial carousel functionality
-    const dots = document.querySelectorAll('.dot');
+    const container = document.querySelector('.testimonial-container');
     const testimonials = document.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.dot');
     let currentIndex = 0;
     let interval;
 
-    // Function to show specific testimonial
+    // Show testimonial by scrolling the container
     function showTestimonial(index) {
-        // Hide all testimonials
-        testimonials.forEach(testimonial => {
-            testimonial.classList.remove('active');
-        });
+    const cardWidth = testimonials[0].offsetWidth + 20; // +gap
+    const scrollAmount = cardWidth * index;
 
-        // Remove active class from all dots
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
+    container.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
 
-        // Show selected testimonial and dot
-        testimonials[index].classList.add('active');
-        dots[index].classList.add('active');
+    // Set active dot
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
 
-        currentIndex = index;
-    }
+    currentIndex = index;
+}
 
-    // Move to previous testimonial
+    //Move to previous testimonial
     function prevTestimonial() {
         currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
         showTestimonial(currentIndex);
@@ -108,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to reset the interval
     function resetInterval() {
         clearInterval(interval);
-        interval = setInterval(nextTestimonial, 5000);
+        interval = setInterval(nextTestimonial, 2500);
     }
 
     // Start auto-rotation
@@ -118,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     if (hamburger) {
         hamburger.addEventListener('click', function () {
-            
+
         });
     }
     // Get the toggle button and the menu
